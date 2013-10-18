@@ -29,4 +29,7 @@ Neighborfied::Application.configure do
 
   # Devise
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
+  # Paperclip Route
+  Paperclip.options[:command_path] = "/usr/local/Cellar/imagemagick/6.8.7-0"
 end
